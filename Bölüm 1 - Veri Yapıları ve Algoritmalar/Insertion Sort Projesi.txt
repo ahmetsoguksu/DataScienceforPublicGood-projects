@@ -1,0 +1,36 @@
+############################## patika.dev ##############################
+################## Data Science for the Public Good ####################
+##################### Veri Yapıları ve Algoritmalar ####################
+######################### Insertion Sort Projesi #######################
+############################# Ahmet Soğuksu ############################
+
+*** Verilen dizi = [22,27,16,2,18,6]
+
+1. -> Verilen dizinin Insertion Sort algoritmasına göre aşamaları:
+
+    Aşama 1=[2,27,16,22,18,6] /dizinin en küçük elemanı 0. indexteki elemanla yer değiştirdi.
+    Aşama 2=[2,6,16,22,18,27] /2. küçük eleman 1. indexteki eleman ile yer değiştirdi.
+    Aşama 3=[2,6,16,22,18,27] /3. küçük eleman 2. indexte bulunduğu için işlem yapılmadı.
+    Aşama 4=[2,6,16,18,22,27] /4. küçük eleman 3. indexteki eleman ile yer değiştirdi.
+    Aşama 5=[2,6,16,18,22,27] /5. küçük eleman 4. indexte bulunduğu için işlem yapılmadı.
+    => Tek bir eleman kaldığı için algoritma sonlandı. Toplamda 3 işlem yapılmış oldu.
+
+2. -> Insertion Sort algoritmasının Big-O notation gösterimi:
+
+    Insertion sort algoritması; n + (n-1) + (n-2) + .... + 1 şeklinde n kadar işlem yapıyor.
+    Yukarıdaki formül 1'den n'e kadar olan sayıların toplamını vermektedir. Bunun basitleşti-
+    rilmiş hali {n.(n+1)}/2 ya da (n^2+n)/2 olarak gösterilebilir. Bu formülde en büyük etkiyi
+    yaratan işlem n^2 olduğundan O(n^2) olarak gösterebiliriz.
+
+3. ve 4. -> Insertion sort algoritmasına göre 18 sayısının time complexity case kapsamı:
+
+    Yukarıdaki dizinin sıralanmış haline göre ortada olduğu için Average case kapsamına girer.
+
+*** Verilen dizi = [7,3,5,8,2,9,4,15,6]
+
+1. -> Insertion sort algoritmasına göre ilk 4 adımı:
+
+    Aşama 1=[2,3,5,8,7,9,4,15,6] /dizinin en küçük elemanı 0. indexteki elemanla yer değiştirdi.
+    Aşama 2=[2,3,5,8,7,9,4,15,6] /2. küçük eleman 1. indexte bulunduğundan işlem yapılmadı.
+    Aşama 3=[2,3,4,8,7,9,5,15,6] /3. küçük elemanla 2. indexteki eleman yer değiştirdi.
+    Aşama 4=[2,3,4,5,7,9,8,15,6] /4. küçük elemanla 3. indexteki eleman yer değiştirdi.

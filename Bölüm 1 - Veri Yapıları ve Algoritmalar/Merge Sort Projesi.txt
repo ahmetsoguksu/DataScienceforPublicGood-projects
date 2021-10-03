@@ -1,0 +1,30 @@
+############################## patika.dev ##############################
+################## Data Science for the Public Good ####################
+##################### Veri Yapıları ve Algoritmalar ####################
+######################### Insertion Sort Projesi #######################
+############################# Ahmet Soğuksu ############################
+
+*** Verilen dizi = [16,21,11,8,12,22]
+
+1. -> Merge Sort algoritmasına göre aşamaları:
+
+    Aşama 1 = [16,21,11] [8,12,22] /ortadan bölerek iki farklı dizi oluşturuldu.
+    Aşama 2 = [16,21] [11] [8,12] [22] /yeni diziler de ortadan bölündü.
+    Aşama 3 = [16] [21] [11] [8] [12] [22] /dizilerde tek eleman kalan kadar bölme
+    işlemi devam etti.
+    Aşama 4 = [16,21] [8,11] [12,22] /elemanlar ikişer ikişer karşılaştırılarak 
+    küçük eleman solda olacak şekilde iki elemanlı diziler oluşturuldu.
+    Aşama 5 = [8,11,16,21] [12,22] /diziler ikişer ikişer karşılaştırıldı ve 
+    sıralı olarak birleştirildi. Soldaki dizinin ilk elemanıyla sağdaki dizinin 
+    ilk elemanı karşılaştırıldı ve sağdaki dizinin elemanı küçük olduğu için yeni 
+    dizinin ilk elemanı olarak yazıldı. Daha sonra soldaki dizinin ilk elemanı ile
+    sağdaki dizinin ikinci elemanı karışalştırıldı. Tüm elemanlar yeni diziye yazıla-
+    na kadar işlem devam etti. 
+    Aşama 6 = [8,11,12,16,21,22] Üstteki işlemlerin aynısı kalan 2 dizi için gerçek-
+    leşti ve algoritma sonlandı.
+
+2. -> Big-O gösterimi:
+
+    Her aşamada n-1 kadar işlem yapıldığı için her aşamayı O(n) olarak gösterebiliriz.
+    2^x=n => logn=x kadar aşama olduğu için Big-O gösterimi 0(nlogn) oluyor.
+

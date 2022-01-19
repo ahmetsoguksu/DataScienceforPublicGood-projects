@@ -1,4 +1,4 @@
--- app.patika.dev SQL modulü Ödev 1 --
+-- app.patika.dev SQL Modülü Ödev 1 --
 
 -- 1. Soru 
 

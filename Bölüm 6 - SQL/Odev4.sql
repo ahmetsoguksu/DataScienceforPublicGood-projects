@@ -1,4 +1,4 @@
--- app.patika.dev SQL Modulü Ödev 4 --
+-- app.patika.dev SQL Modülü Ödev 4 --
 
 --Soru 1
 SELECT DISTINCT replacement_cost FROM film;
